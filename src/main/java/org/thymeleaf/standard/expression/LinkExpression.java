@@ -42,6 +42,7 @@ import org.thymeleaf.context.IWebContext;
 import org.thymeleaf.exceptions.TemplateProcessingException;
 import org.thymeleaf.util.StringUtils;
 import org.thymeleaf.util.Validate;
+import org.thymeleaf.util.portlet.PortletURLUtil;
 import org.unbescape.uri.UriEscape;
 
 
@@ -73,7 +74,6 @@ public final class LinkExpression extends SimpleExpression {
     
     private final IStandardExpression base;
     private final AssignationSequence parameters;
-    
     
     
     
@@ -374,6 +374,7 @@ public final class LinkExpression extends SimpleExpression {
             url = linkBase + parametersBuilder + urlFragment;
             
         }
+        url = PortletURLUtil.expandPortletURL(url);
 
         return (response != null? response.encodeURL(url) : url);
         
