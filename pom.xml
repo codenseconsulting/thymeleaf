@@ -21,11 +21,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.thymeleaf</groupId>
-  <artifactId>thymeleaf-portlet</artifactId>
+  <groupId>org.thymeleaf.portlet</groupId>
+  <artifactId>thymeleaf</artifactId>
   <packaging>jar</packaging>
   <version>2.1.5-SNAPSHOT</version>
-  <name>thymeleaf-portlet</name>
+  <name>thymeleaf</name>
   <url>http://www.thymeleaf.org</url>
 
   <description>XML/XHTML/HTML5 template engine for Java</description>
@@ -47,7 +47,7 @@
     <url>scm:git:git@github.com:thymeleaf/thymeleaf.git</url>
     <connection>scm:git:git@github.com:thymeleaf/thymeleaf.git</connection>
     <developerConnection>scm:git:git@github.com:thymeleaf/thymeleaf.git</developerConnection>
-    <tag>thymeleaf-portlet-2.1.5-RELEASE</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <developers>
